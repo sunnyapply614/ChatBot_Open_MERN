@@ -59,8 +59,6 @@ export default function Header({ onNewChat, disabled, onSend, setIsCopyAnswer })
                 </Dropdown>
 
             </div>
-
-            
         </div>
     )
 }
