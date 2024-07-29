@@ -45,7 +45,17 @@ export default function Header({ onNewChat, disabled, onSend, setIsCopyAnswer })
                     >
                     Auto paste/copy
                     </Dropdown.Toggle>
-                    
+                    <Dropdown.Menu className={ "btn_dropdown_item" }>
+                        <Dropdown.Item href="#" className={ "btn_dropdown_item_active" }>
+                            Assitant ID1
+                        </Dropdown.Item>
+                        <Dropdown.Item href="#" className={ "btn_dropdown_item_active" }>
+                            Assitant ID2
+                        </Dropdown.Item>
+                        <Dropdown.Item href="#" className={ "btn_dropdown_item_active" }>
+                            Assitant ID3
+                        </Dropdown.Item>
+                    </Dropdown.Menu>
                 </Dropdown>
 
             </div>
