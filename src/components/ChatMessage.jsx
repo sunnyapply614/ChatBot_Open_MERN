@@ -8,7 +8,7 @@ export default function ChatMessage({ message, role}) {
 
 
     const roleIcon = role === "user"
-        ? <div className="rounded-full h-8 w-8 flex items-center justify-center font-semibold text-slate-300 shrink-0 "></div>
+        ? <div className="rounded-full h-8 w-8 flex items-center justify-center font-semibold text-slate-300 shrink-0 "><img src={user} alt = "User" /></div>
         : <div className="rounded-full h-8 w-8 flex items-center justify-center font-semibold text-slate-50 shrink-0 "><SiOpenai /></div>;
 
     return (
