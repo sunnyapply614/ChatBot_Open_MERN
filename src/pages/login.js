@@ -47,6 +47,7 @@ function Login({setIsAuthenticated}) {
             onChange={(e) => setPassword(e.target.value)}
             required
           />
+              
           <button type="submit" className="mt-4">Login</button>
         </form>
       </div>
