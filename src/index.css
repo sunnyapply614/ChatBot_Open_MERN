@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background: #f8f7fa;
+  color: #333;
+}
+.tt-login {
+  max-width: 600px !important;
+}
+
+.tt-login {
+  height: 100vh;
+}
+.tt-login .card {
+  width: 100%;
+  background-color: #f8f8f8;
+  padding: 90px 40px;
+  border-radius: 12px;
+  box-shadow: 0 0.1875rem 0.75rem 0 rgba(47, 43, 61, 0.14);
+}
+.heightCol {
+  height: 78vh;
+}
+.copyPaste {
+  height: 94%;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+.tt-login h2 {
+  text-align: center;
+  color: #000;
+}
+.border___left {
+  border: 2px solid #155f82;
+  border-radius: 12px;
+}
+.inputResult {
+  border-top: 1px solid #bcc9d0;
+  height: 80px;
+  color: #747474 !important;
+
+  font-weight: 600;
+}
+.inputResult:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+.buttonSend {
+  background-color: #155f82;
+  padding: 10px 10px;
+  color: #fff;
+  font-size: 18px;
+  width: 200px;
+  border-radius: 5px;
+}
+.logout {
+  background-color: #155f82;
+  padding: 10px 10px;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 18px;
+  width: 100%;
+}
+.btn__paste{
+  background-color: #155f82 !important;
+  padding: 10px 10px;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 18px;
+  width: 288px;
+  padding: 10px !important;
+}
+.btn_dropdown_item{
+  width: 288px;
+  text-align: center !important;
+}
+.btn_dropdown_item_active:active{
+  background-color: #155f82 !important;
+}
+.inputResult::placeholder {
+  color: #747474 !important;
+}
+.tt-login form {
+  display: flex;
+  flex-direction: column;
+}
+
+.tt-login input {
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  transition: border-color 0.3s ease-in-out;
+  outline: none;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+.tt-login input:focus {
+  border-color: #7367f0;
+}
+
+.tt-login button {
+  color: #fff;
+  background-color: #7367f0;
+  border-color: #7367f0;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: 0 0.125rem 0.375rem 0 rgba(115, 103, 240, 0.3);
+}
+
+.tt-login button:hover {
+  background-color: #7367f0;
+}
