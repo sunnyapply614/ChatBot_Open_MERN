@@ -26,7 +26,13 @@ export default function ChatInput({ disabled, onSend, setIsCopyAnswer }) {
             }}
             autoComplete="off"
         >
-            
+            <input
+                name="message"
+                placeholder="Type your message"
+                className="w-full px-4 block bg-transparent inputResult"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+            />
 
             <button
                 disabled={disabled}
@@ -37,15 +43,7 @@ export default function ChatInput({ disabled, onSend, setIsCopyAnswer }) {
                 Send
                 {/* <MdSend /> */}
             </button>
-            {/* <button
-                type="button"
-                onClick={handlePasteAndSend}
-                className={
-                    "bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-400 mr-2"
-                }
-            >
-                <MdContentPaste />
-            </button> */}
+            
         </form>
     );
 }
