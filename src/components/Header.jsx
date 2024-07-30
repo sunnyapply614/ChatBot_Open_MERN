@@ -8,11 +8,6 @@ export default function Header({ onNewChat, disabled, onSend, setIsCopyAnswer })
     const navigate = useNavigate();
     const [message, setMessage] = useState("");
 
-    const logout = () => {
-        localStorage.removeItem('isAuthenticated');
-        navigate("/login");
-
-    };
     const handlePasteAndSend = async () => {
         try {
             const text = await navigator.clipboard.readText();
