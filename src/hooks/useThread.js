@@ -1,3 +1,5 @@
+//src/hooks/useThread.js
+
 import {useState, useEffect} from 'react';
 import {createNewThread, fetchThread} from "../services/api";
 import {runFinishedStates} from "../hooks/constants";
@@ -55,7 +57,10 @@ export const useThread = (run, setRun,isCopyAnswer, setIsCopyAnswer) => {
         // Find the index of the first message that should not be shown
         const firstHiddenIndex = newMessages.findIndex(message => !message.showOnScreen);
     
-        
+        if (firstHiddenIndex !== -1) {
+            // Remove the first message that should not be shown
+            newMessages.splice(firstHiddenIndex, 1);
+        }
     
         setMessages(newMessages);
         if (isCopyAnswer && newMessages) {
