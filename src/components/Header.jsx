@@ -13,6 +13,7 @@ export default function Header({ onNewChat, disabled, onSend, setIsCopyAnswer })
         navigate("/login");
 
     };
+
     const handlePasteAndSend = async () => {
         try {
             const text = await navigator.clipboard.readText();
@@ -24,6 +25,7 @@ export default function Header({ onNewChat, disabled, onSend, setIsCopyAnswer })
             console.error("Failed to read clipboard contents: ", error);
         }
     };
+    
     return (
         <div className="flex1 flex-column px-3 bg-slate-500 rounded-xl h-full">
             <button
