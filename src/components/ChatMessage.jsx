@@ -14,6 +14,7 @@ export default function ChatMessage({ message, role}) {
             {roleIcon}
             <div className="p-1 ml-2">
                 <div className="flex-col">
+                    //Markdown (Msg)
                     <Markdown
                         className="text-slate-50 markdown"
                         remarkPlugins={[remarkGfm]}
