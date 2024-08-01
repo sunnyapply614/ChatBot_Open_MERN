@@ -35,8 +35,16 @@ export default function ChatInput({ disabled, onSend, setIsCopyAnswer }) {
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
             />
-
-            
+//send button
+            <button
+                disabled={disabled}
+                className={
+                    "buttonSend mr-2"
+                }
+            >
+                Send
+                {/* <MdSend /> */}
+            </button>
             
         </form>
     );
