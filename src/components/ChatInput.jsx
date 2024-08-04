@@ -6,17 +6,7 @@ import { useState } from "react";
 export default function ChatInput({ disabled, onSend, setIsCopyAnswer }) {
     const [message, setMessage] = useState("");
 
-    const handlePasteAndSend = async () => {
-        try {
-            const text = await navigator.clipboard.readText();
-            setIsCopyAnswer(true)
-            setMessage(text);
-            onSend(text);
-            setMessage("");
-        } catch (error) {
-            console.error("Failed to read clipboard contents: ", error);
-        }
-    };
+    
     
     return (
         <form
