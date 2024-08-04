@@ -17,12 +17,7 @@ function App() {
   }, []);
 
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/login" element={<Login setIsAuthenticated={setIsAuthenticated}/>} />
-        <Route path="/" element={isAuthenticated ? <Dashboard /> : <Navigate to="/login" />} />
-      </Routes>
-    </BrowserRouter>
+    
   );
 }
 
