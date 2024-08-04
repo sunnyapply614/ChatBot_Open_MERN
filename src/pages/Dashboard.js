@@ -73,7 +73,18 @@ function Dashboard() {
                         </div>
                     </div>
                 </div>
-                
+                <div className='w-3/12 h__full'>
+                    <div className='h-full'>
+                        <Header
+                            onNewChat={clearThread}
+                            onSend={(message) => {
+                                postMessage(threadId, message).then(setRun);
+                            }}
+                            disabled={processing}
+                            setIsCopyAnswer={setIsCopyAnswer}
+                        />
+                    </div>
+                </div>
             </div>
         </div>
     )
