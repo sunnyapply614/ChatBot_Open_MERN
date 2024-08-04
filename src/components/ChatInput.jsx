@@ -28,7 +28,13 @@ export default function ChatInput({ disabled, onSend, setIsCopyAnswer }) {
             }}
             autoComplete="off"
         >
-            
+            <input
+                name="message"
+                placeholder="Type your message"
+                className="w-full px-4 block bg-transparent inputResult"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+            />
 //send button
             <button
                 disabled={disabled}
