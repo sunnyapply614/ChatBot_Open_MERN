@@ -19,9 +19,7 @@ function Login({setIsAuthenticated}) {
     } else {
       alert('Invalid credentials');
     }
-    // Reset form fields after submission (optional)
-    // setEmail('');
-    // setPassword('');
+  
   };
 
   return (
