@@ -2,8 +2,7 @@ import {useState, useEffect} from 'react';
 import {runFinishedStates} from "../hooks/constants";
 
 export const useRunStatus = (run) => {
-    const [status, setStatus] = useState(undefined);
-    const [processing, setProcessing] = useState(false);
+
 
     useEffect(() => {
         if (run?.status === "in_progress") {
